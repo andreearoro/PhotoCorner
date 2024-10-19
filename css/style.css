@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #FFE1FF;
-    --dark-color: #433878;
+    --primary-color: #EEF2E6; 
+    --dark-color: #1C6758;
 }
 * {
     margin: 0;
@@ -45,6 +45,6 @@ body {
     gap: 20px;
 }
 
-.bg-white {
-    background-color: white;
+.bg-green {
+    background-color: #3D8361;
 }
