@@ -58,3 +58,23 @@ body {
     border-radius: 5px;
     padding: 5px;
 }
+
+.card {
+    background-color: #D6CDA4;
+    height: 200px;
+    width: 200px;
+    border: 5px #3D8361;
+    padding-top: 30px;
+}
+
+.card img {
+    width: 150px;
+}
+
+.card button {
+    width: 200px;
+    color: #EEF2E6;
+    background-color: #1C6758;
+    padding: 10px;
+    text-transform: uppercase;
+}
