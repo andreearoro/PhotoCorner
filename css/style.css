@@ -2,6 +2,7 @@
     --primary-color: #EEF2E6; 
     --dark-color: #1C6758;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -47,4 +48,13 @@ body {
 
 .bg-green {
     background-color: #3D8361;
+}
+
+.nav-links a {
+    background-color: var(--dark-color);
+    color: #EEF2E6;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
 }
