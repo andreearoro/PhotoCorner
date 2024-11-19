@@ -34,6 +34,10 @@ body {
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+  }
+
 .gap-5 {
     gap: 5px;
 }
@@ -77,4 +81,18 @@ body {
     background-color: #1C6758;
     padding: 10px;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+.border-bottom {
+    border-bottom: 1px solid gray;
+  }
+  
+  .w-500 {
+    width: 500px;
+  }
+  
+  .w-200 {
+    width: 200px;
+  }
+  
