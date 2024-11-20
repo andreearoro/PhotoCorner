@@ -47,7 +47,7 @@ body {
 }
 
 .gap-20 {
-    gap: 20px;
+    gap: 30px;
 }
 
 .bg-green {
@@ -68,24 +68,27 @@ body {
     height: 200px;
     width: 200px;
     border: 5px #3D8361;
+    border-radius: 10px;
     padding-top: 30px;
+    margin: 10px;
 }
 
 .card img {
-    width: 150px;
+    width: 100px;
 }
 
 .card button {
     width: 200px;
     color: #EEF2E6;
     background-color: #1C6758;
+    border-radius: 10px;
     padding: 10px;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .border-bottom {
-    border-bottom: 1px solid gray;
+    border-bottom: 10px solid gray;
   }
   
   .w-500 {
