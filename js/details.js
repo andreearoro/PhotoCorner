@@ -1,18 +1,38 @@
-import {getProductById} from "../api/produsefoto.js";
+const URL = "https://670fe5c2a85f4164ef2c625c.mockapi.io/products"
 
-document.addEventListener("DOMContentLoaded", showProductDetils);
+async function displayProductDetails() {
+  try {
+    const response = await fetch(URL);
+    const products = await response.json();
 
-async function showProductDetils(){
-    const urlSearchParams = new URLSearchParams(window.location.search);
-    console.log(window.location.search);
-    const productId = urlSearchParams.get("id");
-    console.log(productId);
+    const container = document.getElementById("product-details");
 
-    const product = await getProductById(productId);
+    products.forEach((product) => {
+      const productElement = document.createElement("div");
+      productElement.classList.add("product");
 
-    document.querySelector(".content").innerHTML = 
-    `
-    <h2>${product.details}</h2>
-    
-    `;
+      const nameElement = document.createElement("h3");
+      nameElement.textContent = product.name;
+
+      const priceElement = document.createElement("p");
+      priceElement.textContent = `Price: $${product.price}`;
+
+      const pictureElement = document.createElement("img");
+      pictureElement.src = product.imageURL;
+
+      const descriptionElement = document.createElement("p");
+      descriptionElement.textContent = product.details;
+
+      productElement.appendChild(nameElement);
+      productElement.appendChild(priceElement);
+      productElement.appendChild(pictureElement);
+      productElement.appendChild(descriptionElement);
+
+      container.appendChild(productElement);
+    });
+  } catch (error) {
+    console.error("Error fetching product data:", error);
+  }
 }
+
+window.addEventListener("DOMContentLoaded", displayProductDetails);

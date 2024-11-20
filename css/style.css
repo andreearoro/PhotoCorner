@@ -71,6 +71,7 @@ body {
     border-radius: 10px;
     padding-top: 30px;
     margin: 10px;
+    display: block;
 }
 
 .card img {
@@ -103,3 +104,34 @@ body {
     width: 200px;
   }
   
+.product-details {
+    background-color: #D6CDA4;
+    height: 200px;
+    width: 200px;
+    border: 5px #3D8361;
+    border-radius: 10px;
+    padding-top: 30px;
+    margin: 10px;
+    image-resolution: 100px;
+    object-fit: scale-down;
+} 
+  
+.delete {
+    color: black;
+    background-color: #CC0000;
+    height: 30px;
+}
+
+.increase {
+    color: black;
+    background-color: green;
+    height: 30px;
+    width: 30px;
+}
+
+.decrease {
+    color:black;
+    background-color: crimson;
+    height: 30px;
+    width: 30px;
+}
