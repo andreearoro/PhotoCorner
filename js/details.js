@@ -15,7 +15,7 @@ async function displayProductDetails() {
       nameElement.textContent = product.name;
 
       const priceElement = document.createElement("p");
-      priceElement.textContent = `Price: $${product.price}`;
+      priceElement.textContent = `Price: ${product.price}`;
 
       const pictureElement = document.createElement("img");
       pictureElement.src = product.imageURL;
