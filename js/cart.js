@@ -22,7 +22,7 @@ function showCart() {
                <button class="increase" data-id=${id}>+</button>
             </div>
             <span>${(cart[id].price * cart[id].quantity).toFixed(2)}lei</span>
-            <button class="delete" data-id=${id}>Sterge</button>
+            <button class="delete" data-id=${id}>Delete</button>
          </div>
       `;
 		total = total + cart[id].price * cart[id].quantity;
