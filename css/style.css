@@ -153,3 +153,34 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
+
+.contact-form input, .contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #1C6758;
+    color: #EEF2E6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #34495e;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3D8361;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
