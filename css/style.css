@@ -192,3 +192,8 @@ footer {
 }
 
 
+.name h4 {
+    text-overflow: ellipsis;
+    width: 150px;
+
+}
