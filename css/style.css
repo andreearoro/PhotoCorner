@@ -137,7 +137,7 @@ body {
 
 .decrease {
     color:black;
-    background-color: crimson;
+    background-color: rgb(237, 65, 65);
     height: 30px;
     width: 30px;
 }
